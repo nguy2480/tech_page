@@ -1,21 +1,46 @@
 html {
-    background-color: grey;
+    min-width: 200px;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    text-align: left;
 }
 
 #navbar {
     float: left;
     height: 100%;
-    margin: 20px;
+    padding: 10px;
+    margin-top: 80px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: black;
+    list-style: none;
+    font-size: medium;
 }
 
+#navbar > header {
+    font-size: large;
+    font-weight: 700;
+}
+
+
 main {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .main-section > header {
     font-size: x-large;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#introduction ul {
+    font-family: monospace;
 }
 
 @media (max-width:600px) {
