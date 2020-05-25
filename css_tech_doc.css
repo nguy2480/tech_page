@@ -4,16 +4,17 @@ html {
     line-height: 1.5;
 }
 
-h1 {
-    font-size: 50px;
-    background-color: black;
-    color: white;
-    text-align: left;
-}
-
 #navbar {
-    float: left;
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
     height: 100%;
+    border-right: solid;
+    border-color: black;
+    background-color: grey;
+    /*
     padding: 10px;
     margin-top: 80px;
     margin-right: 20px;
@@ -21,27 +22,79 @@ h1 {
     border-color: black;
     list-style: none;
     font-size: medium;
+    */
 }
 
-#navbar > header {
+header {
+    color:black;
+    margin:10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: grey;
+    border-top: 1px solid;
+    border-color:black;
+    list-style: none;
+    position: relative; 
+    width: 100%;
+}
+
+#navbar a {
+    display:block;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    margin: 15px;
+    font-size: 0.96em;
+
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+/*
+ navbar > header {
     font-size: large;
     font-weight: 700;
 }
 
-
 main {
     margin-top: 20px;
 }
+*/
 
-.main-section > header {
+/*.main-section > header {
     font-size: x-large;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
 }
+*/
 
-#introduction ul {
-    font-family: monospace;
-}
 
 @media (max-width:600px) {
     html{
